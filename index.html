@@ -20,20 +20,20 @@
         <span>Todolog</span>
       </a>
       <nav class="nav-links" aria-label="Page sections">
-        <a href="#today">Today</a>
-        <a href="#screens">Screens</a>
-        <a href="#downloads">Download</a>
+        <a href="#flow">Flow</a>
+        <a href="#devices">Devices</a>
+        <a href="#download">Download</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero" aria-label="Todolog product landing">
         <div class="hero-copy">
-          <p class="eyebrow">iOS · Android · macOS</p>
+          <p class="eyebrow">Today-first task manager</p>
           <h1>밀린 할 일을 오늘 다시 시작하세요.</h1>
-          <p class="hero-body">
-            Todolog는 지연된 일, 인박스, 오늘 할 일을 분리해서 보여주고
-            지금 할 수 있는 다음 행동으로 돌아오게 돕습니다.
+          <p>
+            Todolog는 지연된 일과 오늘 할 일을 분리해서 보여주고,
+            다시 시작할 수 있는 다음 행동으로 돌아오게 돕습니다.
           </p>
           <div class="store-actions" aria-label="Download Todolog">
             <a
@@ -56,89 +56,87 @@
             </a>
           </div>
         </div>
-        <div class="hero-media" aria-label="Todolog Today Sweep screen">
+
+        <div class="product-stage" aria-hidden="true">
           <img
+            class="desktop-preview"
+            src="./assets/macos-today.png"
+            alt=""
+          />
+          <img
+            class="phone-preview phone-primary"
             src="./assets/ios-today-sweep.png"
-            alt="Todolog Today Sweep screen on iPhone"
+            alt=""
+          />
+          <img
+            class="phone-preview phone-secondary"
+            src="./assets/ios-inbox.png"
+            alt=""
           />
         </div>
       </section>
 
-      <section class="proof-strip" aria-label="Todolog value summary">
-        <div>
-          <strong>Overdue 정리</strong>
-          <span>밀린 일을 오늘과 분리합니다.</span>
-        </div>
-        <div>
-          <strong>Inbox 계획</strong>
-          <span>적어둔 일을 오늘 계획으로 바꿉니다.</span>
-        </div>
-        <div>
-          <strong>Today Briefing</strong>
-          <span>앱을 열면 먼저 볼 일을 보여줍니다.</span>
-        </div>
+      <section class="flow" id="flow" aria-label="Todolog flow">
+        <article>
+          <span>01</span>
+          <h2>빠르게 적기</h2>
+          <p>생각난 일을 붙잡고, 정리는 나중에 이어갑니다.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h2>오늘로 돌아오기</h2>
+          <p>전체 목록보다 오늘 해야 할 일을 먼저 확인합니다.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h2>놓친 일 다시 시작</h2>
+          <p>밀린 일을 죄책감 목록이 아니라 다음 행동으로 바꿉니다.</p>
+        </article>
       </section>
 
-      <section class="section split" id="today">
+      <section class="section feature" id="devices">
         <div class="section-copy">
-          <p class="eyebrow">Today-first</p>
-          <h2>할 일 목록보다 오늘 할 일을 먼저 봅니다.</h2>
-          <p>
-            모든 일을 한 화면에 쌓아두면 시작이 늦어집니다. Todolog는 오늘
-            처리할 일과 나중에 정리할 일을 나눠서, 다시 시작할 수 있는 흐름을
-            만듭니다.
-          </p>
-        </div>
-        <figure class="screen-pair">
-          <img src="./assets/ios-inbox.png" alt="Todolog inbox planning screen" />
-          <img src="./assets/android-today.png" alt="Todolog Android today screen" />
-        </figure>
-      </section>
-
-      <section class="section" id="screens">
-        <div class="section-copy wide">
           <p class="eyebrow">Across devices</p>
           <h2>폰에서 적고, Mac에서 계속 이어갑니다.</h2>
           <p>
-            모바일에서는 빠르게 기록하고, 데스크톱에서는 키보드와 넓은 화면으로
-            오늘 해야 할 일을 곁에 둡니다.
+            이동 중에는 빠르게 기록하고, 책상 앞에서는 넓은 화면으로 오늘의
+            흐름을 유지합니다. 같은 Todolog를 iOS, Android, macOS에서 이어갈
+            수 있습니다.
           </p>
         </div>
-        <figure class="desktop-shot">
-          <img src="./assets/macos-today.png" alt="Todolog macOS today screen" />
+        <figure class="device-row">
+          <img src="./assets/android-today.png" alt="Todolog Android Today screen" />
+          <img src="./assets/macos-today.png" alt="Todolog macOS Today screen" />
         </figure>
       </section>
 
-      <section class="section downloads" id="downloads">
-        <div class="section-copy wide">
+      <section class="section download" id="download">
+        <div class="section-copy compact">
           <p class="eyebrow">Download</p>
-          <h2>지금 사용하는 기기에서 Todolog를 시작하세요.</h2>
+          <h2>지금 사용하는 기기에서 시작하세요.</h2>
         </div>
         <div class="download-grid">
           <a
-            class="download-card"
+            class="download-link"
             href="https://apps.apple.com/kr/app/todolog/id6756988909"
             target="_blank"
             rel="noreferrer"
           >
             <span>iPhone · iPad · Mac</span>
             <strong>App Store</strong>
-            <p>Apple 기기에서 Todolog를 설치합니다.</p>
           </a>
           <a
-            class="download-card"
+            class="download-link"
             href="https://play.google.com/store/apps/details?id=com.logfactory.todolog"
             target="_blank"
             rel="noreferrer"
           >
             <span>Android</span>
             <strong>Google Play</strong>
-            <p>Android 기기에서 Todolog를 설치합니다.</p>
           </a>
-          <a class="download-card secondary" href="./support.html">
+          <a class="download-link quiet" href="./support.html">
             <span>Help</span>
             <strong>Support</strong>
-            <p>문의와 지원 정보를 확인합니다.</p>
           </a>
         </div>
       </section>
